@@ -1,5 +1,5 @@
 # Minha Experiencia na Compass.uol
-Repositório para acompanhar meu aprendizado na Compass.uol
+Repositório para acompanhar minha jornada na Compass.uol
 
 ### Apresentação
 Olá, meu nome é Aylton Neto, sou natural do Rio de Janeiro.
