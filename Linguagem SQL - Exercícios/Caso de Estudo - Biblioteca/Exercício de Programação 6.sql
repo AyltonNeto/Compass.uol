@@ -8,5 +8,6 @@ FROM autor
 LEFT JOIN livro
 	ON codautor = autor
 
-group by nome
-HAVING quantidade_publicacoes = 7 --(Como substituir esse 7 por um comando?)
+GROUP by nome
+ORDER by quantidade_publicacoes DESC
+LIMIT 1
