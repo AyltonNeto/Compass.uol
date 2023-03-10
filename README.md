@@ -17,6 +17,16 @@ Também aprendi bastante sobre Git/GitHub, Máquinas Vituais, Sistemas GNU/Linux
 Está sendo uma ótima experiência!!
 
 ### Tópicos Concluídos na Sprint 1
-- [x] Git e GitHub do básico ao avançado (c/ gist e GitHub Pages)
-- [x] Administração de Sistemas GNU/Linux: Fundamentos e Prática
-- [x] Data & Analytics - PB - AWS 1/10
+- [x] Git e GitHub do básico ao avançado (c/ gist e GitHub Pages);
+- [x] Administração de Sistemas GNU/Linux: Fundamentos e Prática;
+- [x] Data & Analytics - PB - AWS 1/10.
+
+## Resumo da Sprint 2
+Nessa sprint aprendi sobre SQL, Big Data, Kanban e Nexus. Vale destacar que gostei basntante de aprender SQL,
+os exercícios que nos passaram foram bons desafios, tive que refazer algumas vezes e ainda quero treinar mais nessa linguagem.
+Apesar de as vezes ter que correr um pouco, sinto que estou absorvendo bem os conteúdos e estou animado para a próxima sprint.
+
+### Tópicos Concluídos na Sprint 1
+- [x] SQL para Análise de Dados: Do básico ao avançado;
+- [x] Big Data Fundamentos 3.0;
+- [x] Data & Analytics - PB - AWS 2/10.
