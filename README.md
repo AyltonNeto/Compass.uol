@@ -26,7 +26,21 @@ Nessa sprint aprendi sobre SQL, Big Data, Kanban e Nexus. Vale destacar que gost
 os exercícios que nos passaram foram bons desafios, tive que refazer algumas vezes e ainda quero treinar mais nessa linguagem.
 Apesar de as vezes ter que correr um pouco, sinto que estou absorvendo bem os conteúdos e estou animado para a próxima sprint.
 
-### Tópicos Concluídos na Sprint 1
+### Tópicos Concluídos na Sprint 2
 - [x] SQL para Análise de Dados: Do básico ao avançado;
 - [x] Big Data Fundamentos 3.0;
 - [x] Data & Analytics - PB - AWS 2/10.
+
+## Resumo da Sprint 3
+Nessa sprint aprendi muito sobre Python e consegui finalizar os cursos de Segurança WEB e Gestão Ágil. 
+Dessa vez, tive algumas dificuldade em relação ao curso. No caso, o curso de Python não teve um 
+instrutor muito didático e o conteúdo ficou um pouco confuso. 
+Os exercícios e o DesafioETL, exigiram bastante, então busquei utilizar o conteúdo complementar e outras 
+fontes de informação. No fim, deu pra finalizar tudo no prazo e desenvolver muito conhecimento "na base 
+da insistencia" e trabalho em equipe.
+
+### Tópicos Concluídos na Sprint 3
+- [x] Segurança em Aplicações WEB;
+- [x] Gestão Ágil com Scrum, Kanban & Nexus: O Guia Definitivo;
+- [x] Programação em Python do básico ao avançado;
+- [x] Data & Analytics - PB - AWS 3/10.
