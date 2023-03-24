@@ -12,22 +12,21 @@
 #   Imprima: A lâmpada ainda está ligada? False
 
 class Lampada():
-#    def __init__(self, ligada):
-#        self.ligada = False
+    def __init__(self, estado=False, ligada=False):
+        self.ligada = ligada
+        self.estado = estado
 
     def esta_ligada(self):
-        if self.ligada == True:
-            print('A lâmpada está ligada?', True)
-        else: print('A lâmpada está ligada?', False)
+        return self.estado
 
     def liga(self):
-        self.ligada = True
+        self.estado = True
 
     def desliga(self):
-        self.ligada = False
+        self.estado = False
         
 l1 = Lampada()
 l1.liga()
-l1.esta_ligada()
+print(f'A lâmpada está ligada? {l1.esta_ligada()}')
 l1.desliga()
-l1.esta_ligada()
+print(f'A lâmpada está ligada? {l1.esta_ligada()}')

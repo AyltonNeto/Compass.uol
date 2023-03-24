@@ -3,9 +3,5 @@
 # ['abc', 'abc', 'abc', '123', 'abc', '123', '123']
 
 lista = ['abc', 'abc', 'abc', '123', 'abc', '123', '123']
-a = []
-
-for i in range(len(lista)):
-    if lista[i] not in a:
-        a.append(lista[i])
-print(a)
+a = set(lista)
+print(list(a))

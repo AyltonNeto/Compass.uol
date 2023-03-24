@@ -13,23 +13,22 @@
 
 import random 
 random_list = random.sample(range(500),50)
-print(random_list)
 
 lista_ordem = sorted(random_list)
-soma = 0
-
-for i in random_list:
-    soma += i
+soma = sum(random_list)
 
 mediana = (lista_ordem[24]+lista_ordem[25])/2
 media = (soma/50)
 valor_minimo = min(random_list)
 valor_maximo = max(random_list)
 
-print(mediana, media, valor_minimo, valor_maximo)
+print(f'Media: {media}, Mediana: {mediana}, Mínimo: {valor_minimo}, Máximo: {valor_maximo}')
 
 
-# CÓDIGO ALTERNATIVO
+'''
+CÓDIGO ALTERNATIVO
+(sem usar o comando sum)
+
 import statistics
 import random 
 random_list = random.sample(range(500),50)
@@ -41,3 +40,5 @@ valor_minimo = min(random_list)
 valor_maximo = max(random_list)
 
 print(mediana, media, valor_minimo, valor_maximo)
+
+'''

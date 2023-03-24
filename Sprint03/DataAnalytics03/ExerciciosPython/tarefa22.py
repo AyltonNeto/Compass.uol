@@ -7,3 +7,14 @@
 #    pessoa.nome = 'Fulano De Tal'
 #    print(pessoa.nome)
 
+class Pessoa:
+    def __init__(self, id):
+        self.__nome = 'nome'
+        self.id = id
+
+    def nome(self):
+        return
+    
+pessoa = Pessoa(0) 
+pessoa.nome = 'Fulano De Tal'
+print(pessoa.nome)

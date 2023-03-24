@@ -9,3 +9,20 @@
 # imprima:
 #   Somando: 4+5 = 9
 #   Subtraindo: 4-5 = -1
+
+class Calculo:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def sum(self):
+        self.sum = self.x + self.y
+        return self.sum
+    
+    def sub(self):
+        self.sub = self.x - self.y
+        return self.sub
+
+a = Calculo(4,5)
+print(a.sum())
+print(a.sub())

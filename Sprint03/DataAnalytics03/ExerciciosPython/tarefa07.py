@@ -12,7 +12,10 @@ for i in a:
 print(lista)
 
 
-# CÓDIGO ALTERNATIVO
+'''
+CÓDIGO ALTERNATIVO
 
 a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 print(a[::2])
+
+'''

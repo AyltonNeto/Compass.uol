@@ -10,5 +10,17 @@ primeirosNomes = ['Joao', 'Douglas', 'Lucas', 'José']
 sobreNomes = ['Soares', 'Souza', 'Silveira', 'Pedreira']
 idades = [19, 28, 25, 31]
 
+for indice, nome in enumerate(primeirosNomes):
+    i = sobreNomes[indice]
+    x = idades[indice]
+    print(f'{indice} - {nome} {i} está com {x} anos')
+
+
+'''
+CÓDIGO ALTERNATIVO
+(sem usar o comando enumerate)
+
 for i in range(len(idades)):
-    print(f'índice - {primeirosNomes[i]} {sobreNomes[i]} está com {idades[i]} anos') 
+    print(f'{i} - {primeirosNomes[i]} {sobreNomes[i]} está com {idades[i]} anos') 
+
+'''

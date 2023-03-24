@@ -4,5 +4,5 @@
 import json
 
 with open('person.json', 'r') as arquivo:
-    dado = arquivo.read()
+    dado = json.load(arquivo)
 print(dado)

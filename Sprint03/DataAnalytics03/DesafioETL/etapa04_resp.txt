@@ -1,0 +1,8 @@
+O nome do(s) filme(s) mais frequente(s) e sua respectiva frequência.
+
+Resposta: The Avengers - 6 vezes
+          Catching Fire - 4 vezes
+          Harry Potter / Deathly Hallows (P2) - 4 vezes
+          Star Wars: The Force Awakens - 3 vezes
+          The Dark Knight - 3 vezes
+          Meet the Fockers - 3 vezes

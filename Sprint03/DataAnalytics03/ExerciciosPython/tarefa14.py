@@ -11,4 +11,7 @@ def printar(*args, **kwargs):
     for chave, valor in kwargs.items():
         print(f'{chave} = {valor}')
 
-printar(1, 3, 4, 'hello', parametro_nomeado='alguma coisa', x=20)
+parametro_nomeado = 'alguma coisa'
+x = 20
+
+printar(1, 3, 4, 'hello', parametro_nomeado, x)
