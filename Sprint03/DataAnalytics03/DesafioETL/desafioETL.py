@@ -16,7 +16,6 @@ for dados in linhas:
         print(f'Ator/Atriz:{campos[0]} - Total de Filmes:{campos[2]}')
 '''
 
-
 '''
     <-------ETAPA 02------->
 arquivo = open('actors.csv', 'r')
@@ -28,7 +27,6 @@ for dados in linhas[1:]:
     campos = dados.split(',')
     print(f'Ator/Atriz:{campos[0]} - Média de Faturamento Bruto:{campos[3]}')
 '''
-
 
 '''
     <-------ETAPA 03------->
@@ -49,7 +47,6 @@ for dados in linhas[1:]:
         print(f"Ator/Atriz:{campos[0]} - Média de Faturamento:{campos[3]}")
 '''
 
-
 '''
     <-------ETAPA 04------->
 arquivo = open('actors.csv', 'r')
@@ -65,13 +62,22 @@ for dados in linhas[1:]:
     top_filme.append(campos[4])
 
 for filmes in top_filme:
-    if top_filme.count(filmes) > 2:
-        mais_frequentes[filmes] = top_filme.count(filmes)
+    mais_frequentes[filmes] = top_filme.count(filmes)
+
+for filme, freq in mais_frequentes.items():
+    if freq == max(mais_frequentes.values()):
+        nome = filme
+        break
+
+print(f'O Filme Mais Frequente: {nome} - Frequencia: {max(mais_frequentes.values())} vezes')
 
 lista_ordenada = dict(sorted(mais_frequentes.items(), key=lambda item: item[1], reverse=True))
+top5 = list(lista_ordenada)
 
-for item in lista_ordenada:
-    print(item,'-', lista_ordenada.get(item),'vezes')
+print('')
+print('--Rank dos 5 Filmes Mais Frequentes--')
+for item in top5[:5]:
+    print(f'Filme: {item} - Frequencia: {lista_ordenada.get(item)} vezes')
 '''
 
 '''
