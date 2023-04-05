@@ -4,3 +4,8 @@
 # 3 - Imprimir o hash em tela, utilizando o método hexdigest
 # 4 - Retornar ao passo 1
 
+from hashlib import sha1
+
+while True:
+    mascarar = sha1(input().encode())
+    print(mascarar.hexdigest())
