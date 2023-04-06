@@ -44,3 +44,13 @@ da insistencia" e trabalho em equipe.
 - [x] Gestão Ágil com Scrum, Kanban & Nexus: O Guia Definitivo;
 - [x] Programação em Python do básico ao avançado;
 - [x] Data & Analytics - PB - AWS 3/10.
+
+## Resumo da Sprint 4
+Nessa sprint consegui aprofundar mais o conhecimento em Python, aprendi um pouco de estatística e uma nova tecnologia, o Docker. 
+Os cursos e artigos foram muito bons, consegui aprender bastante, e sei que esse aprendizado vai ser muito útil mais a frente.
+A cada sprint conseguimos crescer em equipe e se sentir mais preparados para trabalhar no dia a dia. Animado pra proxima =D
+
+### Tópicos Concluídos na Sprint 4
+- [x] Docker para Desenvolvedores (com Docker Swarm e Kubernetes);
+- [x] Estatística Descritiva com Python;
+- [x] Data & Analytics - PB - AWS 4/10.
