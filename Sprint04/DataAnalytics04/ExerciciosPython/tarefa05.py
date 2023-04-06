@@ -21,27 +21,13 @@
 #    map
 #    sorted
 
-def converte_int(lista):
-    x = sorted(list(map(lambda x: int(x),lista)),reverse=True)
-    return x
-
 with open('estudantes.csv', 'r') as arquivo:
     linhas = arquivo.readlines()
 
-alunos = []
-notas = []
-medias = []
+linhas = sorted(list(map(lambda x: x.replace('\n','') , linhas)))
 
 for linha in sorted(linhas):
-    linha = linha.replace('\n', '')
-    colunas = linha.split(',')
-    alunos.append(colunas[0])
-    notas.append(colunas[1:])
-
-notas = list(map(lambda x: converte_int(x), notas))
-
-for i in range(len(notas)):
-    n = (notas[i])
-    media = ((n[0])+(n[1])+(n[2]))/3
-    medias.append(media)
-    print(f'Nome: {alunos[i]} Notas: {n[:3]} Média: {round(media,2)}')
+    linha = linha.split(',')
+    numeros = sorted(list(map(lambda x: int(x),linha[1:])),reverse=True)
+    media = (numeros[0]+numeros[1]+numeros[2])/3
+    print(f'Nome: {linha[0]} Notas: {numeros[:3]} Média: {round(media,2)}')
