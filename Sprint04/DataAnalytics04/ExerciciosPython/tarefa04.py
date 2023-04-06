@@ -29,7 +29,7 @@ def operacao(tupla, str):
         return tupla[0]/tupla[1]
     elif str == '%':
         return tupla[0]%tupla[1]
-    else: return 0
+    else: return 'Operador não identificado!'
 
 def calcular_valor_maximo(operadores,operandos):
     y = list(zip(operandos,operadores))
