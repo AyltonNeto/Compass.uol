@@ -13,10 +13,7 @@
 #    [ 3+6 , -7-4.9, 8*-8 , 10/2 , 8+4 ] 
 
 # Obter o maior dos valores: 12
-# Na resolução da atividade você deverá aplicar as seguintes funções:
-#    max
-#    zip
-#    map
+# Na resolução da atividade você deverá aplicar as seguintes funções: max, zip e map
 
 def operacao(tupla, str):
     if str == '+':

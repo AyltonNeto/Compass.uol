@@ -12,14 +12,7 @@
 # estudante e obedecendo ao formato descrito a seguir:
 #   Nome: <nome estudante> Notas: [n1, n2, n3] Média: <média>
 
-# Exemplo:
-#    Nome: Maria Luiza Correia Notas: [7, 5, 5] Média: 5.67
-#    Nome: Maria Mendes Notas: [7, 3, 3] Média: 4.33
-
-# Em seu desenvolvimento você deverá utilizar lambdas e as seguintes funções:
-#    round
-#    map
-#    sorted
+# Em seu desenvolvimento você deverá utilizar lambdas e as seguintes funções: round, map e sorted
 
 with open('estudantes.csv', 'r') as arquivo:
     linhas = arquivo.readlines()

@@ -6,8 +6,7 @@
 # A partir dos lançamentos, a função deve calcular o valor final, somando créditos e subtraindo débitos. 
 # Na lista anterior, por exemplo, teríamos como resultado final 200.
 # Além de utilizar lambdas, você deverá aplicar, obrigatoriamente, as seguintes funções na resolução:
-#    reduce (módulo functools)
-#    map
+#    reduce (módulo functools) e map
 
 from functools import reduce
 
