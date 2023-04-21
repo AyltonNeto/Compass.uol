@@ -3,7 +3,7 @@ Repositório para acompanhar minha jornada na Compass.uol
 
 ## Apresentação
 Olá, meu nome é Aylton Neto. Sou natural do Rio de Janeiro. 
-Gosto de fazer trilhas, assistir vídeos e realizar leituras. 
+Gosto de fazer trilhas, ler livros e assistir vídeos. 
 Estudo Gestão da TI na Unicesumar e estou no 4º Semestre. 
 Esta é a minha primeira experiência profissional na área de tecnologia, 
 mas já estudo e gosto de lidar com dados a um tempo.
@@ -54,3 +54,17 @@ A cada sprint conseguimos crescer em equipe e se sentir mais preparados para tra
 - [x] Docker para Desenvolvedores (com Docker Swarm e Kubernetes);
 - [x] Estatística Descritiva com Python;
 - [x] Data & Analytics - PB - AWS 4/10.
+
+## Resumo da Sprint 5
+Essa sprint marca a metade do programa, finalmente aprendemos a utilizar os serviços na nuvem no AWS da Amazon.
+Tivemos que absorver uma grande quantidade de conteúdo teórico. No início ficou meio confuso, mas durante a caminhada,
+com a ajuda do monitor e de atividades práticas no game, fui capaz de entender os serviços e ter uma base de suas aplicações.
+
+### Tópicos Concluídos na Sprint 5
+- [x] AWS Skill Builder - Exam Prep: AWS Certified Cloud Practitioner;
+- [x] AWS Skill Builder - AWS Partner: Sales Accreditation (Business);
+- [x] AWS Skill Builder - AWS Partner: Cloud Economics Accreditation;
+- [x] AWS Skill Builder - AWS Partner: Accreditation (Technical);
+- [x] AWS Skill Builder - AWS Cloud Quest: Cloud Practitioner;
+- [x] Data & Analytics - PB - AWS 5/10.
+
