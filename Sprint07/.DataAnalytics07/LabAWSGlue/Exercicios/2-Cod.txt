@@ -1,0 +1,4 @@
+2-Imprima o schema do dataframe gerado no passo anterior.
+	
+	data_frame = df.toDF()
+	data_frame.printSchema()

@@ -1,0 +1,4 @@
+9) Escrever o conteúdo do dataframe com os valores de nome em maiúsculo no S3. Atenção aos requisitos:
+A gravação deve ocorrer no subdiretório frequencia_registro_nomes_eua do paths3://<BUCKET>/lab-glue/O formato deve ser JSONO particionamento deverá ser realizado pelas colunas sexo e ano (nesta ordem)
+
+Ficou pendente...

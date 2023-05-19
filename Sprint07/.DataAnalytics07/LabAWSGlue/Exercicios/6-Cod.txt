@@ -1,0 +1,5 @@
+6) Apresentar qual foi o nome feminino com mais registros e em que ano ocorreu.
+
+	data_frame = df.toDF()
+	most_common_female_name = data_frame.filter(data_frame["sexo"] == "F").groupBy("nome", "ano").count().orderBy("count", ascending=False).first()
+print("Nome feminino com mais registros:", 	most_common_female_name.nome, "em", most_common_female_name.ano)

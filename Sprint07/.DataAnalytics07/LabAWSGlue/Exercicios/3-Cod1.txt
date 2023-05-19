@@ -1,0 +1,5 @@
+3- Escrever o código necessário para alterar a caixa dos valores da coluna nome para MAIÚSCULO.
+
+	data_frame = df.toDF()
+	data_frame = data_frame.withColumn("nome_upper", 	upper(data_frame["nome"]))
+	data_frame.show()

@@ -1,0 +1,5 @@
+5-Imprimir a contagem de nomes, agrupando os dados do dataframe pelas colunas ano e sexo. Ordene os dados de modo que o ano mais recente apareça como primeiro registro do dataframe.
+
+	data_frame = df.toDF()
+	count_by_year_sex = data_frame.groupBy(["ano", "sexo"]).count()
+	count_by_year_sex.orderBy("ano", ascending=False).show()

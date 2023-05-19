@@ -1,0 +1,3 @@
+8-Apresentar o total de registros (masculinos e femininos) para cada ano presente no dataframe. Considere apenas as primeiras 10 linhas, ordenadas pelo ano, de forma crescente.
+
+Ficou pendente...

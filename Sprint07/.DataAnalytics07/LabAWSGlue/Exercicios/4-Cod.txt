@@ -1,0 +1,4 @@
+4-Imprimir a contagem de linhas presentes no dataframe.
+
+	count = df.count()
+	print("Contagem de linhas:", count)

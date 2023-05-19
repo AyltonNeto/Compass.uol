@@ -1,0 +1,5 @@
+7-Qual foi o nome masculino com mais registros e em que ano ocorreu.
+
+	data_frame = df.toDF()
+	most_common_mascule_name = data_frame.filter(data_frame["sexo"] == "M").groupBy("nome", "ano").count().orderBy("count", ascending=False).first()
+	print("Nome masculino com mais registros:",	most_common_mascule_name.nome, "em", most_common_mascule_name.ano)
