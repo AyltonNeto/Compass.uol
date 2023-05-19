@@ -56,7 +56,7 @@ A cada sprint conseguimos crescer em equipe e se sentir mais preparados para tra
 - [x] Data & Analytics - PB - AWS 4/10.
 
 ## Resumo da Sprint 5
-Essa sprint marca a metade do programa, finalmente aprendemos a utilizar os serviços na nuvem no AWS da Amazon.
+Essa sprint marca a metade do programa, finalmente aprendemos a utilizar os serviços nos laboratórios do game da AWS.
 Tivemos que absorver uma grande quantidade de conteúdo teórico. No início ficou meio confuso, mas durante a caminhada,
 com a ajuda do monitor e de atividades práticas no game, fui capaz de entender os serviços e ter uma base de suas aplicações.
 
@@ -68,3 +68,32 @@ com a ajuda do monitor e de atividades práticas no game, fui capaz de entender 
 - [x] AWS Skill Builder - AWS Cloud Quest: Cloud Practitioner;
 - [x] Data & Analytics - PB - AWS 5/10.
 
+## Resumo da Sprint 6 e 7
+A sprint 6 começou um pouco complicada, porque o site da AWS que disponibiliza os cursos estava em manutenção.
+Visto a demora no retorno do site, a equipe da Compass rapidamente nos direcionou a iniciar a sprint 7.
+Logo na semana seguinte, o site retornou a normalidade, então as sprints foram unificadas.
+
+Diante do ocorrido, tivemos que nos organizar bastante para não deixarmos acumular as atividades.
+Alguns exercícios eram complicados, então nos reunimos com outras equipes, o que foi bem legal.
+Aprendi sobre Hadoop, Spark e pude ter a experiência de utilizar diversos serviços da AWS.
+Poder aprender e utilizar softwares e serviços úteis para o mercado atual é animador!
+Chegamos nas sprints finais e a dificuldade aumentou, mas seguimos firme :D
+
+### Tópicos Concluídos na Sprint 6 e 7
+- [x] AWS Partner: Data Analytics on AWS (Business);
+- [x] AWS Skill Builder - Data Analytics Fundamentals;
+- [x] AWS Skill Builder - Getting Started with Amazon Redshift;
+- [x] AWS Skill Builder - Deep Dive into Concepts and Tools for Analyzing Streaming Data;
+- [x] AWS Skill Builder - Best Practices for Data Warehousing with Amazon Redshift;
+- [x] AWS Skill Builder - Introduction to Amazon Elastic MapReduce (EMR);
+- [x] AWS Skill Builder - Introduction to Amazon Kinesis Analytics;
+- [x] AWS Skill Builder - Introduction to Amazon Kinesis Streams;
+- [x] AWS Skill Builder - Introduction to AWS IoT Analytics;
+- [x] AWS Skill Builder - Introduction to Amazon Quicksight;
+- [x] AWS Skill Builder - Introduction to Amazon Athena;
+- [x] AWS Skill Builder - Why Analytics for Games;
+- [x] AWS Skill Builder - Serverless Analytics;
+- [x] Learn By Example: Hadoop, MapReduce for Big Data problems;
+- [x] Formação Spark com Pyspark : o Curso Completo;
+- [x] Data & Analytics - PB - AWS 6/10;
+- [x] Data & Analytics - PB - AWS 7/10.
