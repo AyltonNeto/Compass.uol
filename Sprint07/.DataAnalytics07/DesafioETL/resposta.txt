@@ -1,0 +1,4 @@
+Comandos utilizados para criar o container e fazer o upload dos arquivos para a AWS:
+
+    docker build -t bucketup .  
+    docker run bucketup

@@ -1,0 +1,10 @@
+O nome do(s) filme(s) mais frequente(s) e sua respectiva frequência.
+
+Resposta:   O Filme Mais Frequente: The Avengers - Frequencia: 6 vezes
+
+            --Rank dos 5 Filmes Mais Frequentes--
+            Filme: The Avengers - Frequencia: 6 vezes
+            Filme: Catching Fire - Frequencia: 4 vezes
+            Filme: Harry Potter / Deathly Hallows (P2) - Frequencia: 4 vezes
+            Filme: Star Wars: The Force Awakens - Frequencia: 3 vezes
+            Filme: The Dark Knight - Frequencia: 3 vezes

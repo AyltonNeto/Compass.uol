@@ -1,0 +1,20 @@
+Leia o arquivo actors.csv e codifique os cálculos solicitados sobre o conjunto de dados utilizando a biblioteca Pandas.
+Adicione apenas a resposta da questões nos espaços indicados. Seu código-fonte deverá estar no Github.
+Perguntas dessa tarefa:
+
+1)Identifique o ator/atriz com maior número de filmes e o respectivo número de filmes.
+
+    Robert DeNiro - 79 filmes 
+
+2)Apresente a média da coluna contendo o número de filmes.
+
+    A Média da coluna com os números de filmes é: 37.88 
+
+3)Apresente o nome do ator/atriz com a maior média por filme.
+
+    Anthony Daniels - Média por Filme: 451.8
+
+4)Apresente o nome do(s) filme(s) mais frequente(s) e sua respectiva frequência.
+
+    O(s) filme(s) mais frequente(s):
+    The Avengers | Frequência = 6
