@@ -1,3 +1,4 @@
+# Trecho 1 - Bibliotecas e Chaves de Acesso
 import json
 import requests
 import pandas as pd
@@ -14,7 +15,7 @@ def lambda_handler(event, context):
     
     api_key = 'my_api_key'
     
-    # Função para obter o TMDB(ID) pelo IMDB(ID) e extrair dados da API, caso encontre algum resultado.
+# Trecho 2 - Função para obter o TMDB(ID) pelo IMDB(ID) e extrair dados da API, caso encontre algum resultado.
     def get_data_TMDB(id_IMDB, api_key):
         url = f'https://api.themoviedb.org/3/find/{id_IMDB}?api_key={api_key}&external_source=imdb_id'
         response1 = requests.get(url)
@@ -28,6 +29,7 @@ def lambda_handler(event, context):
             return data2
         return None
     
+# Trecho 3 - Realiza a busca do arquivo no bucket e faz a filtragem das animações relevantes
     response = user.get_object(Bucket='data-lake-do-aylton', Key='Raw/Local/CSV/Series/2023/05/29/series.csv')
     data_CSV = pd.read_csv(response['Body'], sep='|')
     
@@ -48,6 +50,7 @@ def lambda_handler(event, context):
     series_informations = []
     count, num_json = 0, 0
 
+# Trecho 4 - Looping para fazer as requisições na API com base nos IDs e nos campos determinados
     for index, row in enumerate(df.iterrows()):
         id_IMDB = str(row[1]['id'])
         series_details = get_data_TMDB(id_IMDB, api_key)
@@ -65,6 +68,7 @@ def lambda_handler(event, context):
             dic_details = {
                 'id': id_IMDB,
                 'titulo': title,
+                'paisOrigem': origin,
                 'estudio': company,
                 'distribuidora': network,
                 'duracao': time,
@@ -76,6 +80,7 @@ def lambda_handler(event, context):
             series_informations.append(dic_details)
             count += 1
             
+# Trecho 5 - Condição para que um novo arquivo seja criado a cada 100 séries ou quando chegar ao fim da seleção
             if count % 100 == 0 or index == len(df)-1:
                 json_informations = json.dumps(series_informations)
                 user.put_object(Body=json_informations, Bucket='data-lake-do-aylton', Key=f'Raw/TMDB/JSON/2023/05/29/series_datas{num_json}.json')
