@@ -21,6 +21,25 @@ Devido aos IDs disponibilzados no arquivo CSV muitas das vezes não coincindirem
 
 ![FuncaoExtracao](https://github.com/AyltonNeto/Compass.uol/assets/83987476/4c14c16a-fc31-4942-9b5d-243ce811f420)
 
+### Rodando Código no Lambda
+Para rodar o código no lambda, foi necessário repetir um processo já realizado na sprint 6, que consiste em subir um arquivo zip com a biblioteca Pandas para o bucket e utiliza-lo como camada no Lambda.
+
+1- Criação da Função Lambda
+![1 1CriarFuncaoLambda](https://github.com/AyltonNeto/Compass.uol/assets/83987476/250599cb-0508-411b-a7ef-90fd206a348d)
+
+2- Subir Camada pro Bucket
+![1 2CamadaNoBucket](https://github.com/AyltonNeto/Compass.uol/assets/83987476/093735ad-9dd2-4364-b83f-51ec8b8bad8f)
+
+3- Criar Camada no Lambda
+![1 3CriarCamada](https://github.com/AyltonNeto/Compass.uol/assets/83987476/adfed16d-550b-4726-aa68-ec1b393ea2a7)
+
+4- Rodar Código no Lambda
+![1 4CodigoLambda](https://github.com/AyltonNeto/Compass.uol/assets/83987476/5eefb23c-38d0-432c-9ade-4996a65f637f)
+![1 5FunçãoOK](https://github.com/AyltonNeto/Compass.uol/assets/83987476/f953cc93-2abb-4d04-9cc3-8220bc2ab26d)
+
+5- Arquivos Gerados no Bucket
+![1 6ResultadoNoBucket](https://github.com/AyltonNeto/Compass.uol/assets/83987476/d6343871-fb4d-469e-83b9-4cdd38767bac)
+
 ### Explicação do Código Lambda
 Depois de definir tudo o que seria feito localmente, refiz o código para que funcionasse no Lambda. O meu código pode ser dividido em 5 partes: 
 
@@ -45,6 +64,22 @@ O quinto trecho está dentro do looping e cria um arquivo JSON dentro do bucket 
 ![Trecho5](https://github.com/AyltonNeto/Compass.uol/assets/83987476/c770ed2a-574b-4a9a-8939-6cf179b7478d)
 
 ## Exercícios de Geração de Massa de Dados
+### Exercício 1
+##### Declare e inicialize uma lista contendo 250 inteiros obtidos de forma aleatória. Após, aplicar o método reverse sobre o conteúdo da lista e imprimir o resultado.
+
+![imgExercicio01](https://github.com/AyltonNeto/Compass.uol/assets/83987476/72b2e67d-0eb9-4827-8f9e-5ef8cf316356)
+
+### Exercício 2
+##### Declare e inicialize uma lista contendo o nome de 20 animais. Ordene-os em ordem crescente e itere sobre os itens, imprimindo um a um (você pode utilizar list comprehension aqui).  Na sequência, armazene o conteúdo da lista em um arquivo de texto, um item em cada linha, no formato CSV.
+
+![imgExercicio02](https://github.com/AyltonNeto/Compass.uol/assets/83987476/052a0ff2-1c8f-4d60-ab51-f212423dfc0f)
+![imgExercicio02_check](https://github.com/AyltonNeto/Compass.uol/assets/83987476/1515bf70-d4ec-49bb-a7b6-d0ac193b7d12)
+
+### Exercício 3
+##### Gerar um arquivo de texto contendo todos os nomes, um a cada linha. O nome do arquivo deve ser nomes_aleatorios.txt. Abrir o arquivo e verificar seu conteúdo (editor de texto)
+
+![imgExercicio03](https://github.com/AyltonNeto/Compass.uol/assets/83987476/75934159-ddb2-4ef0-982f-aa4ed675c02c)
+![imgExercicio03_check](https://github.com/AyltonNeto/Compass.uol/assets/83987476/b97f163f-e983-4b0f-8e49-6635f00da9f0)
 
 ## Exercicios Spark
 
