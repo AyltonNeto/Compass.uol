@@ -47,10 +47,10 @@ def lambda_handler(event, context):
     
     df = top_series.drop_duplicates(subset='id').sort_values(by='numeroVotos', ascending=False)
 
+# Trecho 4 - Looping para fazer as requisições na API com base nos IDs e nos campos determinados
     series_informations = []
     count, num_json = 0, 0
 
-# Trecho 4 - Looping para fazer as requisições na API com base nos IDs e nos campos determinados
     for index, row in enumerate(df.iterrows()):
         id_IMDB = str(row[1]['id'])
         series_details = get_data_TMDB(id_IMDB, api_key)
@@ -83,7 +83,9 @@ def lambda_handler(event, context):
 # Trecho 5 - Condição para que um novo arquivo seja criado a cada 100 séries ou quando chegar ao fim da seleção
             if count % 100 == 0 or index == len(df)-1:
                 json_informations = json.dumps(series_informations)
-                user.put_object(Body=json_informations, Bucket='data-lake-do-aylton', Key=f'Raw/TMDB/JSON/2023/05/29/series_datas{num_json}.json')
+                user.put_object(Body=json_informations, 
+                                Bucket='data-lake-do-aylton', 
+                                Key=f'Raw/TMDB/JSON/2023/05/29/series_datas{num_json}.json')
                 series_informations = []
                 num_json += 1
             continue

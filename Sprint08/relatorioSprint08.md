@@ -17,7 +17,7 @@ Antes de extrair os dados, pensei em como escolheria as séries consideradas "bo
 ![SelecaoBoasAnimacoes](https://github.com/AyltonNeto/Compass.uol/assets/83987476/c5f47368-e1e9-454f-9a53-a7f8ec1f4a47)
 
 ### Extrair Dados do TMDB 
-Devido aos IDs disponibilzados no arquivo CSV muitas das vezes não coincindirem com os do TMDB, pesquisei bastnte e descobri que esses IDs vinham do IMDB. Então precisei elaborar uma função que não somente extraisse os dados do TMDB, mas antes, encontrasse o ID correto para fazer a busca das animações.
+Devido aos IDs disponibilzados no arquivo CSV muitas das vezes não coincindirem com os do TMDB, pesquisei bastante e descobri que esses IDs vinham do IMDB. Então precisei elaborar uma função que não somente extraisse os dados do TMDB, mas antes, encontrasse o ID correto para fazer a busca das animações.
 
 ![FuncaoExtracao](https://github.com/AyltonNeto/Compass.uol/assets/83987476/4c14c16a-fc31-4942-9b5d-243ce811f420)
 

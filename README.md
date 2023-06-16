@@ -97,3 +97,9 @@ Chegamos nas sprints finais e a dificuldade aumentou, mas seguimos firme :D
 - [x] Formação Spark com Pyspark : o Curso Completo;
 - [x] Data & Analytics - PB - AWS 6/10;
 - [x] Data & Analytics - PB - AWS 7/10.
+
+## Resumo da Sprint 8
+Nessa sprint ingressamos de fato no desafio final. Tivemos que definir os temas dos nossos projetos e enriquecer os dados disponibilizados focando na análise final e para isso utilizamos bastante a API do TMDB. Foi a primeira vez que utilizei uma API de forma "profunda", fazendo diversas requisições e entendendo suas possibilidades. Apesar de levar um tempo para entender os dados, definir um tema e utilizar a API, acredito que consegui entregar um ótimo resultado para a análise futura. Além do desafio, também tivemos muitos exercícios que utilizavam Python e PySpark, o que foi muito bom para conseguir treinar e me aprofundar, principalmente no PySpark.
+
+### Tópicos Concluídos na Sprint 8
+- [x] Data & Analytics - PB - AWS 8/10.
