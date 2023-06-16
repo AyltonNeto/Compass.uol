@@ -31,21 +31,20 @@ df_topSeries = df_dataCSV_filter.dropDuplicates(['id'])
 
 # 3ª Etapa | Unir dataframes dataCSV e tmdb
 df_fato = df_topSeries.join(df_tmdb, on='id')
-df_fato = df_fato.select('id', 'genero', 'paisOrigem', 'distribuidora', 'estudio', 'emProducao', 'anoLancamento', 'tempoMinutos', 'episodios', 'numeroVotos', 'notaMedia')
 
 # 4ª Etapa | Criação das Dimensões
 # Dimensão Serie
-df_serie = df_topSeries.select('id', 'tituloPincipal')
+df_serie = df_fato.select('id', 'tituloPincipal')
 df_serie = df_serie.withColumnRenamed('id', 'id_serie')
 df_serie = df_serie.withColumnRenamed('tituloPincipal', 'titulo')
 
 # Dimensão Tempo
-df_tempo = df_topSeries.withColumn('anoLancamento', df_topSeries['anoLancamento'])
+df_tempo = df_fato.withColumn('anoLancamento', df_fato['anoLancamento'])
 df_tempo = df_tempo.select('anoLancamento').distinct().orderBy('anoLancamento')
 df_tempo = df_tempo.withColumn('id_anoLancamento', func.monotonically_increasing_id()+1)
 df_tempo = df_tempo.select('id_anoLancamento','anoLancamento')
 
-# Dimensão Pais
+# Dimensão PaísOrigem
 df_paisOrigem = df_fato.select('paisOrigem').distinct().orderBy('paisOrigem')
 df_paisOrigem = df_paisOrigem.withColumn('id_pais', func.monotonically_increasing_id() + 1)
 df_paisOrigem = df_paisOrigem.select('id_pais','paisOrigem')
