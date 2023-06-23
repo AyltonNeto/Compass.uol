@@ -1,6 +1,6 @@
 from pyspark.sql import SparkSession
 from pyspark import SparkContext, SQLContext
-from pyspark.sql.types import FloatType, IntegerType
+from pyspark.sql.window import Window
 import pyspark.sql.functions as func
 
 spark = SparkSession \
@@ -32,30 +32,29 @@ df_serie = df_serie.withColumnRenamed('id', 'id_serie')
 df_serie = df_serie.withColumnRenamed('tituloPincipal', 'titulo')
 
 # Dimensão Tempo
-df_tempo = df_fato.withColumn('anoLancamento', df_fato['anoLancamento'])
-df_tempo = df_tempo.select('anoLancamento').distinct().orderBy('anoLancamento')
-df_tempo = df_tempo.withColumn('id_anoLancamento', func.monotonically_increasing_id()+1)
+df_tempo = df_fato.select('anoLancamento').distinct().orderBy('anoLancamento')
+df_tempo = df_tempo.withColumn('id_anoLancamento', func.row_number().over(Window.orderBy('anoLancamento')))
 df_tempo = df_tempo.select('id_anoLancamento','anoLancamento')
 
 # Dimensão PaísOrigem
 df_paisOrigem = df_fato.select('paisOrigem').distinct().orderBy('paisOrigem')
-df_paisOrigem = df_paisOrigem.withColumn('id_pais', func.monotonically_increasing_id() + 1)
+df_paisOrigem = df_paisOrigem.withColumn('id_pais', func.row_number().over(Window.orderBy('paisOrigem')))
 df_paisOrigem = df_paisOrigem.select('id_pais','paisOrigem')
 
 # Dimensão Status
 df_status = df_fato.select('emProducao').distinct()
 df_status = df_status.withColumn('status', func.when(df_fato['emProducao'] == 'true', 'Em Produção').otherwise('Finalizado'))
-df_status = df_status.withColumn('id_status', func.monotonically_increasing_id()+1)
+df_status = df_status.withColumn('id_status', func.row_number().over(Window.orderBy('status')))
 df_status = df_status.select('id_status','status')
 
 # Dimensão Estúdio
 df_estudio = df_fato.select('estudio').distinct().orderBy('estudio').filter(df_fato['estudio'].isNotNull())
-df_estudio = df_estudio.withColumn('id_estudio', func.monotonically_increasing_id()+1)
+df_estudio = df_estudio.withColumn('id_estudio', func.row_number().over(Window.orderBy('estudio')))
 df_estudio = df_estudio.select('id_estudio','estudio')
 
 # Dimensão Distribuidora
 df_distribuidora = df_fato.select('distribuidora').distinct().orderBy('distribuidora').filter(df_fato['distribuidora'].isNotNull())
-df_distribuidora = df_distribuidora.withColumn('id_distribuidora', func.monotonically_increasing_id()+1)
+df_distribuidora = df_distribuidora.withColumn('id_distribuidora', func.row_number().over(Window.orderBy('distribuidora')))
 df_distribuidora = df_distribuidora.select('id_distribuidora','distribuidora')
 
 # 5ª Etapa | Criando Dimensão Fato através de joins
