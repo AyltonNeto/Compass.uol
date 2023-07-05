@@ -6,21 +6,21 @@
 Utilização de estrutura de TI funcionando na nuvem com uso sob demanda. 
 
 #### Vantagens do Cloud Computing
-[x] - Velocidade -> Implementação de soluções mais rapidamente;
-[x] - Updates -> Atualizações gerenciadas pela plataforma e sem interrupções;
-[x] - Custo -> Custos mais baixos e com descontos a longo prazo;
-[x] - Segurança -> Redundância e backups gerenciados pela plataforma;
-[x] - Escalabilidade -> Escalabilidade pode ser automática ou modificada rapidamente.
+- [x] Velocidade -> Implementação de soluções mais rapidamente;
+- [x] Updates -> Atualizações gerenciadas pela plataforma e sem interrupções;
+- [x] Custo -> Custos mais baixos e com descontos a longo prazo;
+- [x] Segurança -> Redundância e backups gerenciados pela plataforma;
+- [x] Escalabilidade -> Escalabilidade pode ser automática ou modificada rapidamente.
 
 #### Tipos de Serviços
-[x] - IaaS (Infraestrutura como um Serviço) -> Gerencia: rede, armazenamento, servidores e virtualizações.
-[x] - PaaS (Plataforma como um Serviço) -> Além dos anteriores, gerencia: sistema operacional, middleware e runtime.  
-[x] - SaaS (Software como um Serviço) -> Além dos anteriores, gerencia: dados e aplicações.
+- [x] IaaS (Infraestrutura como um Serviço) -> Gerencia: rede, armazenamento, servidores e virtualizações.
+- [x] PaaS (Plataforma como um Serviço) -> Além dos anteriores, gerencia: sistema operacional, middleware e runtime.  
+- [x] SaaS (Software como um Serviço) -> Além dos anteriores, gerencia: dados e aplicações.
 
 #### Tipos de Nuvem
-[x] - Public Cloud -> Quando uma provedora disponibiliza os serviços de nuvem ao público, sendo mais barata;
-[x] - Hybrid Cloud -> Quando parte dos serviços utilizados estão na nuvem publica e parte na privada, preços combinados;
-[x] - Private Cloud -> Quando uma provedora disponibiliza uma estrutura exclusiva para um cliente, sendo mais cara;
+- [x] Public Cloud -> Quando uma provedora disponibiliza os serviços de nuvem ao público, sendo mais barata;
+- [x] Hybrid Cloud -> Quando parte dos serviços utilizados estão na nuvem publica e parte na privada, preços combinados;
+- [x] Private Cloud -> Quando uma provedora disponibiliza uma estrutura exclusiva para um cliente, sendo mais cara;
 
 ### Básico sobre AWS
 
@@ -33,9 +33,9 @@ A AWS é responsável pela segurança *da* Nuvem, enquanto o Cliente é respons�
 
 #### Forma de Acessar a AWS
 Existem 3 formas: 
-[x] - Console AWS (Interface amigável online)
-[x] - CLI AWS (CLI instalável da AWS)
-[x] - CloudShell (CLI Online da AWS)
+- [x] Console AWS (Interface amigável online)
+- [x] CLI AWS (CLI instalável da AWS)
+- [x] CloudShell (CLI Online da AWS)
 
 ## A Amazon AWS
 
@@ -61,14 +61,14 @@ São estruturas da AWS localizadas em espaços de terceiros em regiões sem Zona
 É um serviço da que ajuda você a controlar o acesso aos recursos da AWS de forma segura. Com o IAM, é possível gerenciar, de maneira centralizada, permissões que controlam quais recursos da AWS os usuários poderão acessar. Você usa o IAM para controlar quem é autenticado (fez login) e autorizado (tem permissões) a usar os recursos.
 
 ### Componestes do IAM
-[x] - Usuários: Representam indivíduos e têm acesso aos serviços da AWS por meio de credenciais de acesso.
+- [x] Usuários: Representam indivíduos e têm acesso aos serviços da AWS por meio de credenciais de acesso.
 
-[x] - Grupos: São usados para gerenciar o acesso de um conjunto de usuários aos serviços da AWS.
+- [x] Grupos: São usados para gerenciar o acesso de um conjunto de usuários aos serviços da AWS.
 
-[x] - Roles: São usadas para delegar permissões a serviços ou entidades confiáveis dentro da AWS. 
+- [x] Roles: São usadas para delegar permissões a serviços ou entidades confiáveis dentro da AWS. 
 Uma role define quais ações podem ser executadas e quais recursos podem ser acessados por uma entidade que assume a função.
 
-[x] - Policys: São usadas para definir regras de acesso aos serviços da AWS. 
+- [x] Policys: São usadas para definir regras de acesso aos serviços da AWS. 
 As políticas podem ser anexadas a usuários, grupos ou roles e especificam quais ações são permitidas ou negadas em quais recursos.
 
 _Chaves de Acesso:_ Access Key Id e Secret Access Key
@@ -83,11 +83,11 @@ A virtualização é uma tecnologia que permite criar ambientes virtuais que sim
 São as maquinas virtuais (VMs) criadas no EC2.
 
 ### Vantagens
-[x] - Controle;
-[x] - Segurança;
-[x] - Compatibilidade;
-[x] - Baixo Custo;
-[x] - Simples.
+- [x] Controle;
+- [x] Segurança;
+- [x] Compatibilidade;
+- [x] Baixo Custo;
+- [x] Simples.
 
 ### AMI - Amazon Machine Image
 São imagens de instâncias, possuem todas as configurações, aplicações e dados da instância. São usadas para permitir a criação de cópias de uma instância em outras Zona de Disponibilidade. As instâncias serão criadas a partir da imagem. As imagens podem ser públicas (disponível para todos os usuários da AWS) ou privadas (dispónivel para contas específicas).
@@ -113,8 +113,8 @@ Objetos possuem identificação unica com uma URL.
 Usado em instâncias. Deve estar na mesma Zona de Disponibilidade que a instância EC2. Para que o EBS possa se conectar a mais de uma instância, é necessário utilizar uma configuração específica.
 
 ##### Tipos de EBS
-[x] - HDD: Lento, para armazenamento (mais barato)
-[x] - SSD: Rápido, para instâncias (mais caro)
+- [x] HDD: Lento, para armazenamento (mais barato)
+- [x] SSD: Rápido, para instâncias (mais caro)
 
 ##### Tipos de Volumes
 
@@ -122,30 +122,30 @@ Usado em instâncias. Deve estar na mesma Zona de Disponibilidade que a instânc
 São SSDs de baixo custo que possuem de 1GB a 16TB e IOPS máximo de 16000 por volume. 
 Usados para desktops virtuais, instâncias únicas de databases (como Oracle e Microsoft SQL), aplicações interativas sensíveis à latência, volumes de inicialização e ambientes de desenvolvimento/teste. 
 
-[x] - gp2: Cargas de trabalho com picos ocasionais de tráfego.
-[x] - gp3: Desempenho consistente e melhor econômia de custos.
+- [x] gp2: Cargas de trabalho com picos ocasionais de tráfego.
+- [x] gp3: Desempenho consistente e melhor econômia de custos.
 
 ###### IOPS Provisionadas
 São SSDs de alta performance e durabilidade, adequados para cargas de trabalho que exigem desempenho extremamente alto, latência baixa e consistência. Possuem volumes de 4GB até 16TB (com excessão do Block Express que chega a 64TB).
 
-[x] - io2 Block Express: 
+- [x] io2 Block Express: 
 Volume SSD de maior performance criado para cargas de trabalho transacionais sensíveis à latência essenciais para os negócios.
 Ideal para implantações de missão crítica maiores e mais intensivas em I/O de NoSQL e bancos de dados relacionais, como Oracle, SAP HANA, Microsoft SQL Server e SAS Analytics. 
 
-[x] - io2: 
+- [x] io2: 
 Volume SSD de alta performance e durabilidade criado para workloads transacionais que dependem da latência.
 Bancos de dados NoSQL e relacionais com alto consumo de E/S.
 
-[x] - io1: 
+- [x] io1: 
 Volume SSD de alta performance criado para workloads transacionais sensíveis à latência.
 Bancos de dados NoSQL e relacionais com alto consumo de E/S.
 
 ###### Otimizados para Taxa de Transferência
-[x] - st1: HDD otimizada por taxa de transferência. Usado para Big data, Data warehouses e Processamento de logs. 
+- [x] st1: HDD otimizada por taxa de transferência. Usado para Big data, Data warehouses e Processamento de logs. 
 Tamanho de 125GB até 16TB
 
 ###### Cold HDD
-[x] - sc1: Armazenamento orientado a throughput para dados acessados com pouca frequência. Possuem o menor custo.
+- [x] sc1: Armazenamento orientado a throughput para dados acessados com pouca frequência. Possuem o menor custo.
 Tamanho de 125GB até 16TB
 
 ##### Snapshot
@@ -154,7 +154,7 @@ Funcionam como backups, são utilizados para permitir que uma outra instância a
 #### S3 - Simple Storage Service
 Foi o primeiro serviço oferecido pela AWS. Não possuem tamanho máximo, porém existe um limite de 5TB para o upload de um arquivo. Possui durabilidade de 99,999999999% e disponibilidade de 99,95-99,99%.
 
-[x] - Buckets: Devem ter nome único e universal. Local onde tudo será armazenado (pastas e arquivos)
+- [x] Buckets: Devem ter nome único e universal. Local onde tudo será armazenado (pastas e arquivos)
 
 ##### ACL - Access Control List
 São as listas de controle de acesso (ACLs) do Amazon S3, permitem o gerenciamento do acesso aos buckets e seus objetos.
@@ -207,8 +207,8 @@ Sistema responsável por converter nomes de domínio legíveis por humanos (por 
 Serviço que permite ajustar automaticamente a capacidade das instâncias do Amazon EC2 em resposta a demandas de tráfego em seus aplicativos.
 
 #### Scaling - Escalabilidade
-[x] - Scaling Up: Aumentar os recursos de uma instância (vertical)
-[x] - Scaling Out: Aumentar a quantidade de um instâncias (horizontal)
+- [x] Scaling Up: Aumentar os recursos de uma instância (vertical)
+- [x] Scaling Out: Aumentar a quantidade de um instâncias (horizontal)
 
 #### Auto Scaling Group
 Um Auto Scaling Group é um grupo lógico de instâncias do Amazon EC2 que são tratadas como uma única entidade pelo EC2 Auto Scaling. O grupo define a configuração da escala automática, como a quantidade mínima e máxima de instâncias que devem ser mantidas em execução. Ele também especifica as políticas de escalonamento que determinam quando e como as instâncias devem ser adicionadas ou removidas com base na demanda.
