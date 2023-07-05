@@ -103,3 +103,16 @@ Nessa sprint ingressamos de fato no desafio final. Tivemos que definir os temas 
 
 ### Tópicos Concluídos na Sprint 8
 - [x] Data & Analytics - PB - AWS 8/10.
+
+## Resumo da Sprint 9
+
+
+### Tópicos Concluídos na Sprint 9
+- [x] Data & Analytics - PB - AWS 9/10.
+
+## Resumo da Sprint 10
+
+
+### Tópicos Concluídos na Sprint 10
+- [x] Introduction AWS QuickSight;
+- [x] Data & Analytics - PB - AWS 10/10.
