@@ -8,7 +8,7 @@ Estudo Gestão da TI na Unicesumar e estou no 4º Semestre.
 Esta é a minha primeira experiência profissional na área de tecnologia, 
 mas já estudo e gosto de lidar com dados a um tempo.
 
-Estudo bastante sobre Análise de Dados, gosto de Excel e BI. 
+Estudo bastante sobre Análise de Dados, gosto de Excel e BI!
 
 ## Resumo da Sprint 1
 Nessa primeira sprint encarei a tarefa de ser o líder da Squad 1 - Data Society.
@@ -105,14 +105,18 @@ Nessa sprint ingressamos de fato no desafio final. Tivemos que definir os temas 
 - [x] Data & Analytics - PB - AWS 8/10.
 
 ## Resumo da Sprint 9
-
+Nessa Sprint começamos aprendendo sobre Modelagem Relacional e Modelagem Dimensional, apesar de já conhecer a relacional, tivemos que nos aprofundar bastante para compreender os modelos, os componentes e principalmente sobre a normalização, já a dimensional foi novidade pra mim, aprendemos seus modelos, elementos e  sobre sua importancia para a construção de Data Warehouses. Após compreender a parte teórica partimos para prática e fizemos nossa própria normalização e construção de uma tabela dimensional. Em relação ao projeto, fizemos o processamento dos dados na Trusted, criamos um modelo dimensional utilizando nossos dados e refinamos os dados que serão utilizados na Refined, para realizar as etapas do projeto utilizamos principalmente o Glue.
 
 ### Tópicos Concluídos na Sprint 9
 - [x] Data & Analytics - PB - AWS 9/10.
 
 ## Resumo da Sprint 10
-
+Chegamos então a última sprint. Onde tivemos que finalizar o nosso projeto e apresenta-lo através de um Dashboard e um vídeo.
+Após refinarmos os dados, utilizamos o Athena para conecta-los ao Quicksight, permitindo então que construíssemos nosso dashboard. No processo de construção do Dashboard, tive que refazer algumas partes de ETL para agregar mais informações a análise e trazer insights mais valiosos. Por fim, apresentei todo o projeto através de um vídeo, explicando desde a definição do tema até os resultados obtidos através do dashboard.
 
 ### Tópicos Concluídos na Sprint 10
 - [x] Introduction AWS QuickSight;
 - [x] Data & Analytics - PB - AWS 10/10.
+
+## Fim do Programa
+Para finalizar, tive a oportunidade de fazer a prova AWS Certified Cloud Practitioner. Com pouco tempo para estudar, mas com muito empenho, consegui ser aprovado! Poder participar desse programa foi uma experiência incrível! Saio mais capacitado, empolgado, certificado e com alguns amigos novos. Obrigado!!!

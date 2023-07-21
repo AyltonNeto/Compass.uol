@@ -65,7 +65,11 @@ Define as configurações necessárias para criar novas instâncias quando o Aut
 
 - [x] Modelo Spot: São ideais para cargas de trabalho com horários de início e término flexíveis ou que toleram interrupções. Utiliza a capacidade computacional ociosa por um valor inferior; 
 
-- [x] Instâncias Reservadas: _são um desconto de cobrança aplicado ao uso de instâncias sob demanda em sua conta_. Você pode adquirir _instâncias reservadas comuns_ e _instâncias reservadas conversíveis por um período de um ou três anos_, e _instâncias reservadas agendadas por um período de um ano_.
+- [x] Instâncias Reservadas: são um desconto de cobrança aplicado ao uso de instâncias sob demanda em sua conta. 
+Tipos de Instâncias Reservadas:
+Instâncias reservadas comuns -> compromisso de _uso de longo prazo_ em uma _instância EC2 específica_, _para o uso constante_.
+Instâncias reservadas conversíveis -> têm _maior flexibilidade_ do que as Instâncias Reservadas Padrão.
+Instâncias reservadas agendadas -> programação _recorrente previsível_ que exija apenas uma fração do dia, semana ou mês.
 
 - [x] Savings Plans: permite reduzir os custos de computação ao haver o compromisso com uma quantidade consistente de uso de computação por um período de um ou três anos.
 
@@ -95,7 +99,7 @@ Você não pode ver ou acessar a infraestrutura subjacente
 É um serviço de orquestração de contêineres Kubernetes totalmente gerenciado. Ele fornece um ambiente escalável e altamente disponível para executar aplicativos em contêineres usando a plataforma Kubernetes.
 
 ##### AWS Fargate
-É uma tecnologia da AWS que permite a execução de contêineres de forma serverless, ou seja, sem a necessidade de provisionar e gerenciar instâncias EC2 (Elastic Compute Cloud).
+É uma tecnologia da AWS que permite a _execução de contêineres de forma serverless_, ou seja, sem a necessidade de provisionar e gerenciar instâncias EC2 (Elastic Compute Cloud).
 
 ### AMI - Amazon Machine Image
 São imagens de instâncias, possuem todas as configurações, aplicações e dados da instância. São usadas para permitir a criação de cópias de uma instância em outras Zona de Disponibilidade. As instâncias serão criadas a partir da imagem. As imagens podem ser públicas (disponível para todos os usuários da AWS) ou privadas (dispónivel para contas específicas).
@@ -193,7 +197,7 @@ Rastreiam o estado das conexões, permitindo que as respostas aos pacotes de sa�
 Sistema responsável por converter nomes de domínio legíveis por humanos (por exemplo, www.amazon.com) em endereços IP legíveis por máquina (por exemplo, 192.0.2.44).
 
 #### Amazon Route 53
-É um serviço DNS altamente escalável que permite registrar e gerenciar domínios e direcionar o tráfego da Internet para recursos da AWS. Permite que você crie registros DNS personalizados para direcionar o tráfego de acordo com suas necessidades através de policies.
+É um serviço DNS altamente escalável que permite registrar e gerenciar domínios e direcionar o tráfego da Internet para recursos da AWS. Permite que você crie registros DNS personalizados para direcionar o tráfego de acordo com suas necessidades através de policies. _Permite a criação de domínios públicos_. As três principais funções do Route 53 são registrar nomes de domínio, rotear o tráfego da Internet para os recursos do domínio e conferir a integridade desses recursos.
 
 ## Serviços de armazenamento da AWS. 
 Existem 8 serviços: S3, Glacier, EFS, EBS, Snowball, Cloudfront, Storage Gateway e Instance Store EC2
@@ -307,7 +311,7 @@ São políticas que permitem configurar períodos para que o arquivo seja movido
 Migrar o banco de dados para ser executado no EC2. Permitindo o controle sobre as mesmas variáveis do ambiente on premises, como sistema operacional, memória, CPU, capacidade de armazenamento... 
 
 #### Amazon RDS - Relation Database Service
-É um serviço de banco de dados relacional _gerenciado_ oferecido pela AWS, ele fica responsável por manter o DB, como patches automatizados, backups, redundância, failover e recuperação de desastres. Ele permite que você configure, opere e escale facilmente bancos de dados relacionais na nuvem. Suporta uma variedade de bancos de dados relacionais populares, como MySQL, PostgreSQL, Oracle, SQL Server e MariaDB.
+É um serviço de banco de dados relacional _gerenciado_ oferecido pela AWS, ele fica responsável por manter o DB, como patches automatizados, backups, redundância, failover e recuperação de desastres. Ele permite que você configure, opere e escale facilmente bancos de dados relacionais na nuvem. Suporta uma variedade de bancos de dados relacionais populares, como MySQL, PostgreSQL, Oracle, SQL Server e MariaDB. Permite criar _réplicas de leitura entre regiões_.
 
 #### Amazon Aurora
 É um mecanismo de banco de dados relacional compatível com MySQL e PostgreSQL, mas projetado para oferecer desempenho, disponibilidade e escalabilidade aprimorados. Ele é um serviço _totalmente gerenciado pela AWS_. É compatível com a maioria das ferramentas e aplicativos existentes do MySQL e do PostgreSQL. Ele é _barato_, possui _dados replicados_ e realiza _backups contínuos para o S3_, além de _pontos de recuperação_.
@@ -331,16 +335,18 @@ Permite migrar bancos de dados relacionais e não relacionais e outros tipos de 
 #### Outros Serviços de Banco de Dados
 ##### Banco de Dados
 - [x] Amazon DocumentDB: é um serviço de banco de dados de documentos compatível com cargas de trabalho do MongoDB.
-- [x] Amazon Neptune: é um serviço de banco de dados de grafo.
+- [x] Amazon Neptune: é um serviço de _banco de dados de grafo_. 
 - [x] Amazon Managed Blockchain: é um serviço para criar e gerenciar redes de blockchain com estruturas de código aberto.
 - [x] Amazon QLDB - Quantum Ledger Database: é um serviço de banco de dados ledger.
+
+OBS: O Neptune e o DocumentDB possuem replicação em várias AZs por padrão.
 
 ##### Aceleradores
 - [x] Amazon ElastiCache: é um serviço que adiciona camadas de cache para ajudar a melhorar os tempos de leitura.
 - [x] Amazon DAX - DynamoDB Acelerator: é um cache em memória para o DynamoDB.
 
 ##### AWS Storage Gateway
-O AWS Storage Gateway é um serviço de armazenamento na nuvem híbrida que oferece acesso on-premises a armazenamento na nuvem praticamente ilimitado. Os clientes usam o Storage Gateway para simplificar o gerenciamento de armazenamento e reduzir os custos de casos de uso de armazenamento na nuvem híbrida. Ele disponibiliza uma performance de baixa latência armazenando em cache dados acessados com frequência no local e, ao mesmo tempo, armazenando dados de modo seguro e resiliente nos serviços de armazenamento na nuvem da Amazon.
+O AWS Storage Gateway _é um serviço de armazenamento na nuvem híbrida_ que oferece _acesso on-premises a armazenamento na nuvem praticamente ilimitado_. Os clientes usam o Storage Gateway para simplificar o gerenciamento de armazenamento e reduzir os custos de casos de uso de armazenamento na nuvem híbrida. Ele disponibiliza uma performance de baixa latência armazenando em cache dados acessados com frequência no local e, ao mesmo tempo, armazenando dados de modo seguro e resiliente nos serviços de armazenamento na nuvem da Amazon.
 
 ## Security
 
@@ -364,6 +370,7 @@ O AWS Storage Gateway é um serviço de armazenamento na nuvem híbrida que ofer
 - [x] Group (grupo): São usados para gerenciar o acesso de um conjunto de usuários aos serviços da AWS.
 
 - [x] Roles (funções): São identidades que podem ser assumidas para obter acesso temporário às permissões.
+Permitem o acesso entre aplicações e/ou serviços.
 
 - [x] Policys (políticas): São documentos JSON que concedem ou negam permissões para serviços e recursos AWS.
 
@@ -397,18 +404,26 @@ Permite análisar, aceitar e gerenciar seus contratos com a AWS e acessar relat�
 É um serviço de gerenciamento de chaves criptográficas. Ele permite criar e controlar de maneira centralizada as chaves de criptografia usadas para proteger dados confidenciais e outros recursos na nuvem.
 
 #### AWS Inspector
-É um serviço de segurança automatizado da AWS que ajuda a _identificar e corrigir vulnerabilidades_ de segurança em instâncias do Amazon EC2 e em aplicativos em execução na nuvem. 
+É um serviço de segurança automatizado da AWS que ajuda a _identificar e corrigir vulnerabilidades_ de segurança em instâncias do Amazon EC2 e em aplicativos em execução na nuvem. _Gera relatórios de avaliação de segurança automatizados_.
 
 #### Amazon GuardDuty
 é um serviço que fornece detecção inteligente de ameaças para sua infraestrutura e seus recursos AWS. Ele identifica ameaças monitorando continuamente a atividade da rede e o comportamento da conta no seu ambiente AWS. 
 
+### AWS Macie
+Realiza a descoberta de dados confidenciais usando machine learning e correspondência de padrões, fornece visibilidade dos riscos de segurança de dados e habilita proteção automatizada contra esses riscos.
+
+### Amazon Cognito 
+Fornece um serviço gerenciado que pode oferecer suporte a recursos de _login/cadastro_ ou atuar como um _provedor de identidade_ (IdP) em um cenário de identidade federada.
+
+### AWS KMS - Key Management Service
+É um serviço de gerenciamento de chaves criptográficas usado para proteger dados e recursos armazenados e transmitidos dentro da plataforma AWS. O KMS ajuda a criar, controlar, gerenciar e auditar o uso de chaves de criptografia.
+
 ## Monitoramento e Análise
 
 ### CloudWatch
-Permite que você monitore sua infraestrutura da AWS e as aplicações que você executa na AWS em tempo real. Acesso a todas as métricas e logs de forma centralizada na forma de painéis.
+Permite que você _monitore sua infraestrutura da AWS e as aplicações que você executa_ na AWS _em tempo real_. Acesso a todas as _métricas e logs_ de forma centralizada na forma de painéis. Você pode monitorar suas cobranças estimadas da AWS usando o CloudWatch. Quando você ativa o monitoramento de cobranças estimadas em sua conta da AWS, elas são calculadas e enviadas várias vezes ao dia para o CloudWatch como dados de métrica. 
 
-#### Alarme do CloudWatch
-São alertas gerados de acordo com alguma métrica definida pelo usuário. Os alertas podem vir acompanhados de ações.
+Alarme do CloudWatch* -> alertas gerados de acordo com alguma métrica definida pelo usuário, podem vir acompanhados de ações.
 
 ### Cloud Trail
 É um serviço de _auditoria e rastreamento que registra as atividades_ realizadas em sua conta da AWS. Ele fornece informações detalhadas sobre ações realizadas pelos usuários, serviços e recursos da AWS, ajudando a auditar, monitorar e solucionar problemas de segurança e conformidade. Os _logs podem ser salvos por tempo indeterminado_. É possível identificar "o que aconteceu", "quem fez a solicitação", "quando ocorreu" e "como a solicitação foi feita".
@@ -437,10 +452,27 @@ Três tipos de ofertas estão disponíveis: Sempre gratuito, 12 meses gratuitos 
 - [x] Cost Explorer -> Visualização dos gastos e relatório de contas. 
 
 ### AWS Suport Plans
-- [x] Basic -> Inclui acesso a whitepapers, documentação e comunidades de suporte.
-- [x] Developer -> Inclui suporte limitado a email com resposta de até 12h.
-- [x] Business -> Inclui suporte via chat, telefone e email com resposta de até 1h.
-- [x] Enterprise -> Inclui suporte de um gerente de contas (TAM - Technical Account Management)
+
+#### Basic 
+- [x] Trusted Advisor: verificações básicas
+- [x] AWS Personal Health Dashboard 
+- [x] Suporte: Atendimento ao cliente 24/7
+- [x] Acesso a whitepapers, documentação e comunidades de suporte
+
+#### Developer
+- [x] Suporte Básico: acesso ao Cloud Support pela Web em _horário comercial_
+- [x] Acesso ao suporte por e-mail
+
+#### Business
+- [x] Trusted Advisor: verificações completas
+- [x] Suporte Técnico: Acesso aos engenheiros de suporte de nuvem por telefone
+
+#### Enterprise 
+- [x] Inclui suporte dedicado de um gerente de contas (_TAM - Technical Account Management_)
+- [x] Suporte Técnico: Acesso aos _engenheiros de suporte de nuvem 24h/7_
+- [x] Assistencia a Conta: Equipe de _suporte do Concierge_
+- [x] SLA de 15mim para cargas de trabalho críticas.
+
 
 *Somente os planos Business e Enterprise possuem acesso completo ao Trusted Advisor.
 
@@ -480,6 +512,9 @@ Um plano de ação que ajuda a orientar sua organização para a migração na n
 - [x] Recompra: envolve a mudança de uma licença tradicional para um modelo de software como serviço.
 - [x] Refatoração/rearquitetura: envolve reimaginar como um aplicativo é arquitetado e desenvolvido usando recursos da nuvem.
 
+### AWS DataSync 
+É um serviço da AWS que ajuda na transferência rápida e segura de grandes quantidades de dados entre diferentes locais. Ele é útil em várias situações, especialmente quando você precisa mover grandes volumes de dados de forma eficiente e confiável.
+
 ### Snow Familly
 É uma coleção de dispositivos físicos para transporte físico de até exabytes de dados para dentro e para fora da AWS. 
 
@@ -510,6 +545,12 @@ Você pode transferir _até 100 petabytes por Snowmobile_, um contêiner de tran
 - [x] AWS DeepRacer: é um carro de corrida autônomo de escala 1/18 para testar modelos de aprendizado por reforço.
 - [x] Amazon Rekognition: Automatize e reduza o custo de seu reconhecimento de imagem e análise de vídeo com machine learning.
 - [x] Amazon Transcribe: Converte automaticamente a fala em texto
+
+### AWS Cost Anomaly Detection 
+Aproveita tecnologias avançadas de _machine learning para identificar gastos anômalos_ e suas causas-raiz para que você possa tomar medidas rapidamente. 
+
+### Amazon EMR
+É a solução de big data em nuvem líder do setor para processamento de dados, análise interativa e machine learning que usa estruturas de código aberto, como Apache Spark, Apache Hive e Presto.
 
 #### Serviços de Inteligencia Artificial
 - [x] Amazon Lex: é um serviço para criação de interfaces de conversação usando voz e texto.
@@ -546,17 +587,16 @@ ________________________________________________________________________________
 ### AWS Config
 O AWS Config avalia, audita e avalia continuamente as configurações e os relacionamentos de seus recursos.
 
-### AWS Macie
-Realiza a descoberta de dados confidenciais usando machine learning e correspondência de padrões, fornece visibilidade dos riscos de segurança de dados e habilita proteção automatizada contra esses riscos.
-
-### Amazon EMR
-É a solução de big data em nuvem líder do setor para processamento de dados, análise interativa e machine learning que usa estruturas de código aberto, como Apache Spark, Apache Hive e Presto.
-
 ### Lightsail
 
-### Amazon Cognito
+### Amazon WorkSpaces
+São áreas de trabalho virtuais totalmente gerenciados, seguros e confiáveis para cada workload.
 
-### Amazon EMR
+### AWS Compliance Program
+Ele detalha a postura de conformidade da AWS em relação a várias regulamentações e frameworks. Determinando os serviços que atendem aos requisitos regulatórios regionais.
+
+### AWS Audit Manager
+Audite continuamente o uso da AWS para simplificar a avaliação de risco e conformidade
 
 ### Amazon Pinpoint
 
@@ -564,7 +604,9 @@ Realiza a descoberta de dados confidenciais usando machine learning e correspond
 
 ### AWS Director Service
 
-### AWS KMS
+
+
+As chaves gerenci
 
 ### AWS Certificate Manager
 
