@@ -120,3 +120,8 @@ Após refinarmos os dados, utilizamos o Athena para conecta-los ao Quicksight, p
 
 ## Fim do Programa
 Para finalizar, tive a oportunidade de fazer a prova AWS Certified Cloud Practitioner. Com pouco tempo para estudar, mas com muito empenho, consegui ser aprovado! Poder participar desse programa foi uma experiência incrível! Saio mais capacitado, empolgado, certificado e com alguns amigos novos. Obrigado!!!
+
+### Links
+[Apresentação do Projeto](https://github.com/AyltonNeto/Compass.uol/blob/main/Sprint10/.DataAnalytics10/Refined/ApresentacaoProjetoFinal.pdf)
+
+[Dashboard](https://github.com/AyltonNeto/Compass.uol/blob/main/Sprint10/.DataAnalytics10/Refined/Dashboard.pdf)
